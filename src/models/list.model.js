@@ -2,7 +2,15 @@ import mongoose from "mongoose";
 
 const listSchema = new mongoose.Schema({
     workTitle:{
-        type: String
+        type: String,
+        required:true,
+    },
+    completedBy:{
+        type: Date,
+        required: true,
+    },
+    description:{
+        type:String
     }
 })
 
